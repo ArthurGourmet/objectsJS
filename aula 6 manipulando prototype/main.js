@@ -1,27 +1,27 @@
-// //
+// como munipular prototypes
 
-// function produto(nome,preço){
-//     this.nome=nome,
-//    this.preço = preço
-// }
-// function produto2(nome,preço){
-//     this.nome=nome,
-//    this.preço = preço
-// }
-// produto.prototype.desconto = function(desconto){
-//     return this.preço = this.preço - (this.preço * desconto) / 100
-// }
+function produto(nome,preço){
+    this.nome=nome,
+    this.preço = preço
+}
+function produto2(nome,preço){
+    this.nome=nome,
+    this.preço = preço
+}
+produto.prototype.desconto = function(desconto){
+    return this.preço = this.preço - (this.preço * desconto) / 100
+}
 
 
-// const p = new produto2('short praia',60)
-// Object.setPrototypeOf(p, produto.prototype)
-// const camiseta = new produto('camisa polo',55)
-// console.log(camiseta.preço)
+const p = new produto2('short praia',60)
+Object.setPrototypeOf(p, produto.prototype)
+const camiseta = new produto('camisa polo',55)
+console.log(camiseta.preço)
 
-// camiseta.desconto(50)
-// p.desconto(50)
-// console.log(p.preço)
-// console.log(camiseta.preço)
+camiseta.desconto(50)
+p.desconto(50)
+console.log(p.preço)
+console.log(camiseta.preço)
 
 
 
