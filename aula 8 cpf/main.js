@@ -27,7 +27,7 @@
 // validar ou nao
 
 
-const cpf = new ValidaCpf('055.994.411.05')
+const cpf = new ValidaCpf('055.994.411.05') // o cpf q vai ser verificado
 
 function ValidaCpf(cpfenviado){
     Object.defineProperty(this,'cpfLimpo',{
