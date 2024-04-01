@@ -1,20 +1,4 @@
-// property e propeties é usado para definir configuraçoes de um objeto
 
-function CriaPessoa(nome,idade,registro){
-    this.nome= nome
-    this.idade = idade
-
-    Object.defineProperty(this,"registro",{
-        enumerable: true, //faer a chave aparecer ou nao
-        value: registro, // o valor que vai receber
-        writable:false,// se pode faer alteraçoes do valor
-        configurable: false// se pode ser reconfigurada
-
-
-    })
-        
-
-}
 
 const p1= new CriaPessoa('lucas',5,656);
 p1.nome= 'roberto' // sem o property ey posse fazer alteraçoes quando quiser
