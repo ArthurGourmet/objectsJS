@@ -4,13 +4,10 @@
 
 function pessoa(nome,idade){
     this.nome= nome,
-    this.idade= idade,
-    this.inf=()=>{
-        return `${this.nome} tem ${this.idade} anos`
-    };
+    this.idade= idade
 }
 pessoa.prototype.idadeCompleta = function(){ //assim criasse um prototype
     return `${this.nome} tem ${this.idade} anos`
 }
 const pessoa1 = new pessoa('Pedro',5)
-console.log(pessoa1.idadeCompleta())
+console.log(pessoa1.inf())
